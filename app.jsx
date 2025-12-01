@@ -1,10 +1,25 @@
-// import React, { useState, useMemo, useEffect } from 'react';
-import {
-  BrainCircuit, Globe2, Zap, ExternalLink, X,
-  Layers, Sparkles, LineChart, ShieldAlert, Code2, ArrowRight, Lightbulb, Terminal,
-  Gamepad2, Dumbbell, Activity, Search,
-  Loader2, Wifi, Radio, Filter, CheckCircle2, Trophy, Flame
-} from 'lucide-react';
+// アイコンは以下で代替：
+
+const BrainCircuit = () => <span>🧠</span>;
+const Globe2 = () => <span>🌐</span>;
+const Zap = () => <span>⚡</span>;
+const ExternalLink = () => <span>🔗</span>;
+const X = () => <span>✕</span>;
+const Sparkles = () => <span>✨</span>;
+const LineChart = () => <span>📈</span>;
+const ShieldAlert = () => <span>🛡️</span>;
+const ArrowRight = () => <span>→</span>;
+const Lightbulb = () => <span>💡</span>;
+const Terminal = () => <span>💻</span>;
+const Gamepad2 = () => <span>🎮</span>;
+const Dumbbell = () => <span>💪</span>;
+const Activity = () => <span>📊</span>;
+const Loader2 = () => <span>⏳</span>;
+const Wifi = () => <span>📡</span>;
+const Radio = () => <span>📻</span>;
+const CheckCircle2 = () => <span>✓</span>;
+const Trophy = () => <span>🏆</span>;
+const Flame = () => <span>🔥</span>;
 
 // ==========================================
 // データ定義セクション
@@ -349,29 +364,3 @@ export default function MultiTrendApp() {
     </div>
   );
 }
-
-// lucide-reactのimport部分は削除し、アイコンは以下で代替：
-
-const BrainCircuit = () => <span>🧠</span>;
-const Globe2 = () => <span>🌐</span>;
-const Zap = () => <span>⚡</span>;
-const ExternalLink = () => <span>🔗</span>;
-const X = () => <span>✕</span>;
-const Sparkles = () => <span>✨</span>;
-const LineChart = () => <span>📈</span>;
-const ShieldAlert = () => <span>🛡️</span>;
-const ArrowRight = () => <span>→</span>;
-const Lightbulb = () => <span>💡</span>;
-const Terminal = () => <span>💻</span>;
-const Gamepad2 = () => <span>🎮</span>;
-const Dumbbell = () => <span>💪</span>;
-const Activity = () => <span>📊</span>;
-const Loader2 = () => <span>⏳</span>;
-const Wifi = () => <span>📡</span>;
-const Radio = () => <span>📻</span>;
-const CheckCircle2 = () => <span>✓</span>;
-const Trophy = () => <span>🏆</span>;
-const Flame = () => <span>🔥</span>;
-
-// 以下、Geminiのコードをそのまま貼り付け
-
