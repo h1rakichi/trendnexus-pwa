@@ -374,3 +374,4 @@ const Trophy = () => <span>🏆</span>;
 const Flame = () => <span>🔥</span>;
 
 // 以下、Geminiのコードをそのまま貼り付け
+
