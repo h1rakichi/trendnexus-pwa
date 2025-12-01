@@ -116,13 +116,16 @@ const NEWS_DATA: DataItem[] = [
   // 検索結果からデータを生成
 ];
 
-export default function MultiTrendApp() {
+function MultiTrendApp() {
   const [selectedItem, setSelectedItem] = useState<DataItem | null>(null);
   const [activeTab, setActiveTab] = useState<'ALL' | 'AI' | 'GAME' | 'FITNESS' | 'ANALYSIS'>('ALL');
   const [searchQuery, setSearchQuery] = useState('');
   const [sortOrder, setSortOrder] = useState<'DATE_DESC' | 'DATE_ASC' | 'IMPORTANCE'>('DATE_DESC');
   const [isLoading, setIsLoading] = useState(true);
   const [currentTime, setCurrentTime] = useState(new Date().toLocaleTimeString('ja-JP'));
+  const rootElement = document.getElementById('root');
+  const root = ReactDOM.createRoot(rootElement);
+  root.render(<MultiTrendApp />);
 
   useEffect(() => {
     const timer = setTimeout(() => setIsLoading(false), 1200);
@@ -364,3 +367,4 @@ export default function MultiTrendApp() {
     </div>
   );
 }
+
